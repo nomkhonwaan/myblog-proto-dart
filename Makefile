@@ -1,6 +1,7 @@
 # Shell options
 RM	?= rm
 FIND	?= find
+MKDIR	?= mkdir
 
 # Git options
 GIT	?= git
@@ -15,11 +16,14 @@ SRC_DIR	  := $(CURDIR)/lib/src
 
 .PHONY: clean
 clean:
-	$(RM) -rf $(SRC_DIR)/generated
+	$(RM) -rf $(SRC_DIR)/generated && \
+	$(MKDIR) -p $(SRC_DIR)/generated
 	
 .PHONY: build
 build: clean
 	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/auth/service.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/discussion/service.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/blog/service.proto
 	
 .PHONY: update
 update:
