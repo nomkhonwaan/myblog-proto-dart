@@ -1,0 +1,6 @@
+name: myblog_proto_dart
+version: 0.0.1
+description: Compiled Protocol Buffers from myblog-proto for Dart language
+dependencies: 
+  protobuf: ^1.0.1
+  grpc: ^2.1.3
