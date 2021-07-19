@@ -9,9 +9,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'post.pb.dart' as $2;
-import 'taxonomy.pb.dart' as $3;
-import '../discussion/comment.pb.dart' as $4;
+import 'post.pb.dart' as $6;
+import 'taxonomy.pb.dart' as $4;
+import '../discussion/comment.pb.dart' as $7;
 import '../storage/file.pb.dart' as $5;
 
 class ListPublishedPostsRequest extends $pb.GeneratedMessage {
@@ -77,13 +77,13 @@ class ListPublishedPostsRequest extends $pb.GeneratedMessage {
 
 class ListPublishedPostsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListPublishedPostsResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..pc<$2.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'posts', $pb.PbFieldType.PM, subBuilder: $2.Post.create)
+    ..pc<$6.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'posts', $pb.PbFieldType.PM, subBuilder: $6.Post.create)
     ..hasRequiredFields = false
   ;
 
   ListPublishedPostsResponse._() : super();
   factory ListPublishedPostsResponse({
-    $core.Iterable<$2.Post>? posts,
+    $core.Iterable<$6.Post>? posts,
   }) {
     final _result = create();
     if (posts != null) {
@@ -113,18 +113,18 @@ class ListPublishedPostsResponse extends $pb.GeneratedMessage {
   static ListPublishedPostsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$2.Post> get posts => $_getList(0);
+  $core.List<$6.Post> get posts => $_getList(0);
 }
 
 class ListCategoriesResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListCategoriesResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..pc<$3.Taxonomy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'categories', $pb.PbFieldType.PM, subBuilder: $3.Taxonomy.create)
+    ..pc<$4.Taxonomy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'categories', $pb.PbFieldType.PM, subBuilder: $4.Taxonomy.create)
     ..hasRequiredFields = false
   ;
 
   ListCategoriesResponse._() : super();
   factory ListCategoriesResponse({
-    $core.Iterable<$3.Taxonomy>? categories,
+    $core.Iterable<$4.Taxonomy>? categories,
   }) {
     final _result = create();
     if (categories != null) {
@@ -154,12 +154,12 @@ class ListCategoriesResponse extends $pb.GeneratedMessage {
   static ListCategoriesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$3.Taxonomy> get categories => $_getList(0);
+  $core.List<$4.Taxonomy> get categories => $_getList(0);
 }
 
 class ListTaxonomyPublishedPostsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListTaxonomyPublishedPostsRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..aOM<$3.Taxonomy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'taxonomy', subBuilder: $3.Taxonomy.create)
+    ..aOM<$4.Taxonomy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'taxonomy', subBuilder: $4.Taxonomy.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'offset', $pb.PbFieldType.OU3)
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'limit', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false
@@ -167,7 +167,7 @@ class ListTaxonomyPublishedPostsRequest extends $pb.GeneratedMessage {
 
   ListTaxonomyPublishedPostsRequest._() : super();
   factory ListTaxonomyPublishedPostsRequest({
-    $3.Taxonomy? taxonomy,
+    $4.Taxonomy? taxonomy,
     $core.int? offset,
     $core.int? limit,
   }) {
@@ -205,15 +205,15 @@ class ListTaxonomyPublishedPostsRequest extends $pb.GeneratedMessage {
   static ListTaxonomyPublishedPostsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $3.Taxonomy get taxonomy => $_getN(0);
+  $4.Taxonomy get taxonomy => $_getN(0);
   @$pb.TagNumber(1)
-  set taxonomy($3.Taxonomy v) { setField(1, v); }
+  set taxonomy($4.Taxonomy v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTaxonomy() => $_has(0);
   @$pb.TagNumber(1)
   void clearTaxonomy() => clearField(1);
   @$pb.TagNumber(1)
-  $3.Taxonomy ensureTaxonomy() => $_ensure(0);
+  $4.Taxonomy ensureTaxonomy() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.int get offset => $_getIZ(1);
@@ -236,13 +236,13 @@ class ListTaxonomyPublishedPostsRequest extends $pb.GeneratedMessage {
 
 class ListTaxonomyPublishedPostsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListTaxonomyPublishedPostsResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..pc<$2.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'posts', $pb.PbFieldType.PM, subBuilder: $2.Post.create)
+    ..pc<$6.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'posts', $pb.PbFieldType.PM, subBuilder: $6.Post.create)
     ..hasRequiredFields = false
   ;
 
   ListTaxonomyPublishedPostsResponse._() : super();
   factory ListTaxonomyPublishedPostsResponse({
-    $core.Iterable<$2.Post>? posts,
+    $core.Iterable<$6.Post>? posts,
   }) {
     final _result = create();
     if (posts != null) {
@@ -272,12 +272,12 @@ class ListTaxonomyPublishedPostsResponse extends $pb.GeneratedMessage {
   static ListTaxonomyPublishedPostsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$2.Post> get posts => $_getList(0);
+  $core.List<$6.Post> get posts => $_getList(0);
 }
 
 class ListPostCommentsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListPostCommentsRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..aOM<$2.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'post', subBuilder: $2.Post.create)
+    ..aOM<$6.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'post', subBuilder: $6.Post.create)
     ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'offset', $pb.PbFieldType.OU3)
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'limit', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false
@@ -285,7 +285,7 @@ class ListPostCommentsRequest extends $pb.GeneratedMessage {
 
   ListPostCommentsRequest._() : super();
   factory ListPostCommentsRequest({
-    $2.Post? post,
+    $6.Post? post,
     $core.int? offset,
     $core.int? limit,
   }) {
@@ -323,15 +323,15 @@ class ListPostCommentsRequest extends $pb.GeneratedMessage {
   static ListPostCommentsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $2.Post get post => $_getN(0);
+  $6.Post get post => $_getN(0);
   @$pb.TagNumber(1)
-  set post($2.Post v) { setField(1, v); }
+  set post($6.Post v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPost() => $_has(0);
   @$pb.TagNumber(1)
   void clearPost() => clearField(1);
   @$pb.TagNumber(1)
-  $2.Post ensurePost() => $_ensure(0);
+  $6.Post ensurePost() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.int get offset => $_getIZ(1);
@@ -354,13 +354,13 @@ class ListPostCommentsRequest extends $pb.GeneratedMessage {
 
 class ListPostCommentsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListPostCommentsResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..pc<$4.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comments', $pb.PbFieldType.PM, subBuilder: $4.Comment.create)
+    ..pc<$7.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comments', $pb.PbFieldType.PM, subBuilder: $7.Comment.create)
     ..hasRequiredFields = false
   ;
 
   ListPostCommentsResponse._() : super();
   factory ListPostCommentsResponse({
-    $core.Iterable<$4.Comment>? comments,
+    $core.Iterable<$7.Comment>? comments,
   }) {
     final _result = create();
     if (comments != null) {
@@ -390,18 +390,18 @@ class ListPostCommentsResponse extends $pb.GeneratedMessage {
   static ListPostCommentsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$4.Comment> get comments => $_getList(0);
+  $core.List<$7.Comment> get comments => $_getList(0);
 }
 
 class ListPostAttachmentsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListPostAttachmentsRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.blog'), createEmptyInstance: create)
-    ..aOM<$2.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'post', subBuilder: $2.Post.create)
+    ..aOM<$6.Post>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'post', subBuilder: $6.Post.create)
     ..hasRequiredFields = false
   ;
 
   ListPostAttachmentsRequest._() : super();
   factory ListPostAttachmentsRequest({
-    $2.Post? post,
+    $6.Post? post,
   }) {
     final _result = create();
     if (post != null) {
@@ -431,15 +431,15 @@ class ListPostAttachmentsRequest extends $pb.GeneratedMessage {
   static ListPostAttachmentsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $2.Post get post => $_getN(0);
+  $6.Post get post => $_getN(0);
   @$pb.TagNumber(1)
-  set post($2.Post v) { setField(1, v); }
+  set post($6.Post v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPost() => $_has(0);
   @$pb.TagNumber(1)
   void clearPost() => clearField(1);
   @$pb.TagNumber(1)
-  $2.Post ensurePost() => $_ensure(0);
+  $6.Post ensurePost() => $_ensure(0);
 }
 
 class ListPostAttachmentsResponse extends $pb.GeneratedMessage {

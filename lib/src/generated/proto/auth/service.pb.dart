@@ -9,17 +9,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'user.pb.dart' as $1;
+import 'user.pb.dart' as $2;
 
 class CreateUserRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CreateUserRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.auth'), createEmptyInstance: create)
-    ..aOM<$1.User>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: $1.User.create)
+    ..aOM<$2.User>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: $2.User.create)
     ..hasRequiredFields = false
   ;
 
   CreateUserRequest._() : super();
   factory CreateUserRequest({
-    $1.User? user,
+    $2.User? user,
   }) {
     final _result = create();
     if (user != null) {
@@ -49,26 +49,26 @@ class CreateUserRequest extends $pb.GeneratedMessage {
   static CreateUserRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1.User get user => $_getN(0);
+  $2.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($1.User v) { setField(1, v); }
+  set user($2.User v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
   void clearUser() => clearField(1);
   @$pb.TagNumber(1)
-  $1.User ensureUser() => $_ensure(0);
+  $2.User ensureUser() => $_ensure(0);
 }
 
 class CreateUserResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CreateUserResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.auth'), createEmptyInstance: create)
-    ..aOM<$1.User>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: $1.User.create)
+    ..aOM<$2.User>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: $2.User.create)
     ..hasRequiredFields = false
   ;
 
   CreateUserResponse._() : super();
   factory CreateUserResponse({
-    $1.User? user,
+    $2.User? user,
   }) {
     final _result = create();
     if (user != null) {
@@ -98,14 +98,14 @@ class CreateUserResponse extends $pb.GeneratedMessage {
   static CreateUserResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1.User get user => $_getN(0);
+  $2.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($1.User v) { setField(1, v); }
+  set user($2.User v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
   void clearUser() => clearField(1);
   @$pb.TagNumber(1)
-  $1.User ensureUser() => $_ensure(0);
+  $2.User ensureUser() => $_ensure(0);
 }
 

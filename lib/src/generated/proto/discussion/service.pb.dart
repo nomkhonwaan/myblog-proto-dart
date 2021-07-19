@@ -9,17 +9,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'comment.pb.dart' as $1;
+import 'comment.pb.dart' as $3;
 
 class CreateCommentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CreateCommentRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.discussion'), createEmptyInstance: create)
-    ..aOM<$1.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comment', subBuilder: $1.Comment.create)
+    ..aOM<$3.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comment', subBuilder: $3.Comment.create)
     ..hasRequiredFields = false
   ;
 
   CreateCommentRequest._() : super();
   factory CreateCommentRequest({
-    $1.Comment? comment,
+    $3.Comment? comment,
   }) {
     final _result = create();
     if (comment != null) {
@@ -49,26 +49,26 @@ class CreateCommentRequest extends $pb.GeneratedMessage {
   static CreateCommentRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1.Comment get comment => $_getN(0);
+  $3.Comment get comment => $_getN(0);
   @$pb.TagNumber(1)
-  set comment($1.Comment v) { setField(1, v); }
+  set comment($3.Comment v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasComment() => $_has(0);
   @$pb.TagNumber(1)
   void clearComment() => clearField(1);
   @$pb.TagNumber(1)
-  $1.Comment ensureComment() => $_ensure(0);
+  $3.Comment ensureComment() => $_ensure(0);
 }
 
 class CreateCommentResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CreateCommentResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'myblog.proto.discussion'), createEmptyInstance: create)
-    ..aOM<$1.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comment', subBuilder: $1.Comment.create)
+    ..aOM<$3.Comment>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'comment', subBuilder: $3.Comment.create)
     ..hasRequiredFields = false
   ;
 
   CreateCommentResponse._() : super();
   factory CreateCommentResponse({
-    $1.Comment? comment,
+    $3.Comment? comment,
   }) {
     final _result = create();
     if (comment != null) {
@@ -98,14 +98,14 @@ class CreateCommentResponse extends $pb.GeneratedMessage {
   static CreateCommentResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1.Comment get comment => $_getN(0);
+  $3.Comment get comment => $_getN(0);
   @$pb.TagNumber(1)
-  set comment($1.Comment v) { setField(1, v); }
+  set comment($3.Comment v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasComment() => $_has(0);
   @$pb.TagNumber(1)
   void clearComment() => clearField(1);
   @$pb.TagNumber(1)
-  $1.Comment ensureComment() => $_ensure(0);
+  $3.Comment ensureComment() => $_ensure(0);
 }
 
