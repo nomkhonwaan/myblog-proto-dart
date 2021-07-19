@@ -21,9 +21,11 @@ clean:
 	
 .PHONY: build
 build: clean
-	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/auth/service.proto
-	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/discussion/service.proto
-	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -Imyblog-proto proto/blog/service.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto google/protobuf/empty.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto google/protobuf/timestamp.proto 
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto proto/auth/service.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto proto/blog/service.proto
+	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto proto/discussion/service.proto
 	
 .PHONY: update
 update:
