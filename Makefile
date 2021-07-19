@@ -36,7 +36,7 @@ build: clean
 		proto/discussion/service.proto \
 		proto/discussion/comment.proto
 	$(PROTOC) --dart_out=grpc:$(SRC_DIR)/generated -I/usr/include -Imyblog-proto \
-        		proto/storage/file.proto
+		proto/storage/file.proto
 	
 .PHONY: update
 update:
